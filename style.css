@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+
+    /*ещё один, более сокращённый, вариант записи: font: normal 16px "Roboto", sans-serif;*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(82, 172, 224);
+}
+a:visited {
+    color: slateblue;
+}
+.avatar {
+    width: 200px;
+    height: 250px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    /*font-weight: bold;*/
+}
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 75%;
+    margin: auto;
+    padding-top: 30px;
+}
+/*.social {
+    background: rgb(157, 204, 243);
+    padding: 15px;
+    border: 5px double gray;
+}*/
+.bg-blue {
+    background: rgb(116, 116, 211);
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #1e3563;
+    margin-bottom: 10px;
+}
+
+.contact-group label {
+    display: block;
+    font-size: 14px;
+    color: #1e3563;
+}
+
+.contact-group input,
+.contact-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15 px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .contact-group {
+    width: 50%;
+    margin-right: 20px;
+}
+.row > .contact-group:last-child {
+    margin-right: 0;
+}
+
+.btn {
+    background: #0f141e;
+    padding: 15px 20px;
+    color: #f1f1f1;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
